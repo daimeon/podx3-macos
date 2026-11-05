@@ -15,6 +15,7 @@
 #define PODX3_VID 0x0e41
 #define PODX3_PID 0x414a
 #define PODX3_LIVE_PID 0x414b
+#define PODX3_PRO_PID 0x414c
 
 #define PODX3_RATE 48000
 #define PODX3_IN_CHANNELS 8

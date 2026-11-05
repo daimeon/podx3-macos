@@ -126,6 +126,10 @@ int podx3_open(podx3_t **out, bool verbose) {
         dev->h = libusb_open_device_with_vid_pid(dev->ctx, PODX3_VID, PODX3_LIVE_PID);
     }
     if (!dev->h) {
+        dev->pid = PODX3_PRO_PID;
+        dev->h = libusb_open_device_with_vid_pid(dev->ctx, PODX3_VID, PODX3_PRO_PID);
+    }
+    if (!dev->h) {
         fprintf(stderr, "POD X3 not found (or cannot be opened)\n");
         r = LIBUSB_ERROR_NO_DEVICE;
         goto fail;

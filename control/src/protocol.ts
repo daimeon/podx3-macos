@@ -6,7 +6,7 @@
 // and were re-checked against a real POD X3 (0x0e41:0x414a) on macOS.
 
 export const VENDOR_ID = 0x0e41;
-export const PRODUCT_IDS: Record<number, string> = { 0x414a: 'POD X3', 0x414b: 'POD X3 Live' };
+export const PRODUCT_IDS: Record<number, string> = { 0x414a: 'POD X3', 0x414b: 'POD X3 Live', 0x414c: 'POD X3 Pro' };
 
 export const CONTROL_INTERFACE = 1;
 export const BULK_EP = 1; // endpoint number; 0x01 OUT / 0x81 IN
